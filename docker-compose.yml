@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: pathcat-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: pathcatdb
+      MYSQL_USER: pathcat
+      MYSQL_PASSWORD: pathcat123
+      MYSQL_ROOT_PASSWORD: root123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - pathcat-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+volumes:
+  mysql-data:
+    driver: local
+
+networks:
+  pathcat-network:
+    driver: bridge
