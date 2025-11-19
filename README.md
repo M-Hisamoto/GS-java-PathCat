@@ -92,8 +92,8 @@ br.com.pathcat/
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/M-Hisamoto/PathCat.git
-cd PathCat
+git clone https://github.com/M-Hisamoto/GS-java-PathCat.git
+cd GS-java-PathCat
 ```
 
 2. **Compile o projeto:**
@@ -369,23 +369,3 @@ curl -X POST http://localhost:8080/api/matriculas \
 ```bash
 curl -X GET http://localhost:8080/api/matriculas/usuarios/1/trilhas
 ```
-
-## 🤝 Contribuindo
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Autor
-
-Desenvolvido como parte do projeto PathCat - Plataforma de Upskilling/Reskilling
-
-## 📞 Contato
-
-Para dúvidas ou sugestões, abra uma issue no repositório do GitHub.
